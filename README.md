@@ -1,9 +1,52 @@
-# React + Vite
+# 学びのポイント
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. React Hookの基礎
 
-Currently, two official plugins are available:
+### a. `useState`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Todo-ReactBook
+- Reactの関数コンポーネントでstateを持つことができる。
+- `const [state, setState] = useState(initialState);` の形式で使用する。
+
+### b. `useEffect`
+
+- 副作用（データの取得、購読、手動のDOM操作など）を関数コンポーネント内で行うためのHook。
+- コンポーネントのマウント、アンマウント時、または特定のstateやpropsの変更時に動作する。
+
+### c. `useRef`
+
+- `.current` プロパティを持つ「refオブジェクト」を返す。
+- DOM要素への参照や、レンダー間で持続する変数の保持に使用する。
+
+### d. `React.memo`
+
+- レンダリングの最適化を行うための高階コンポーネント。
+- プロップスが変更されていない限り、再レンダリングを回避してパフォーマンスを向上させる。
+
+## 2. レンダリングについて
+
+- Reactのレンダリングの仕組みと、不要な再レンダリングを避けるための方法について学びました。
+
+## 3. アプリの作成
+
+### a. モックサーバー
+
+- データを模倣するためのモックサーバーの設定と使用方法。
+
+### b. カスタムフック
+
+- ロジックを再利用するためのカスタムフックの作成方法。
+
+### c. コンポーネント
+
+- Reactのコンポーネント設計と実装に関する基本的な知識。
+
+### d. ChakraUI
+
+- ChakraUIを使用したデザインシステムとUIコンポーネントの実装。
+
+
+
+# local serverの立ち上げ
+npx json-server --watch db.json --port 3100
+
+
